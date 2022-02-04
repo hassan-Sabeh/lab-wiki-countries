@@ -1,9 +1,10 @@
 import React from 'react';
-import countriesData from '../countries.json';
+
 
 
 const CountryDetails = (props) => {
     const countryId = props.match.params.countryId;
+    const countriesData = props.data;
     const country = countriesData.filter(countryObj => {
         if (countryObj.cca2 === countryId) {
             return countryObj;

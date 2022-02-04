@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import countriesData from '../countries.json';
 
 const CountriesList = () => {
-    console.log(countriesData);
     return (
         <>List of countries:
             <div className="countries-list">
